@@ -1,0 +1,8 @@
+<h3>w11s1</h3>
+<p>task1</p>
+<p>在task1依照步驟編譯simExtMtb plugin專案，最後<span>在 release 目錄中取得 simExtMtb.dll, 啟動前放入 Coppeliasim 根目錄，不清楚這個步驟所得到的結果是甚麼，其他皆依照步驟完成。</span></p>
+<p>task2</p>
+<p>在task2我負責的是部分uArm的零件，並透過solvespace繪製，零件因為我們是先透過小組成員事先簡化過，所以繪製過程中不會有太大的麻煩，也順利的完成此任務。</p>
+
+<h3>w11s2</h3>
+<p>在w10任務中，我學習到如何使用Nx的NXOpen API對零件的尺寸進行控制，讓我對機械設計有近一步的了解。並且在w10_nx_integ和w10_ssh了解nx啟動檔以及ssh設定</p>

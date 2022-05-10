@@ -142,6 +142,150 @@ img.add_border {
     <div id="tipue_search_content">w11 << <a href='w11.html'>Previous</a> <a href='w11s2.html'>Next</a> >> w11s2<br /><h1>w11s1</h1>
 <p>[23]</p>
 <p>--------------------</p>
+<h4>大組倉儲更新步驟</h4>
+<p>這一頁會講解應該如何更新大組倉儲步驟跟必須知道的東西</p>
+<p>首先在開始之前大家其實可以觀察一下你每次在更新網站也就是利用cmsimde時就竟都更改些什麼東西呢?</p>
+<p><img alt="" height="107" src="https://40923123.github.io/cd2022/images/RFcIdso85a.png" width="750"/></p>
+<p>其實更改的檔案通常有三個其中兩個html檔事記錄你所有網頁的檔案，一個是現在一個是之前，然後還有一個js黨是老師的搜尋系統會自動抓取字串的程式，所以其實在更改之前你會發現如果要進行協同只要處理這三個檔案衝突即可，而js黨則是必須想辦法更改它程式再擷取字串的步驟或這手動暴力應改等之類的，簡單來說是這樣再來以下還有必須注意的。</p>
+<h4>協同問題篇</h4>
+<p>須注意同時的問題由於上述所說的主要是js黨的問題導致今天不管是同時修改同一頁資料或不同頁又或者不同頁的資料(是有不同差異的，另解說)都必須解決檔案相衝問題，在github上若檔案相衝github會幫忙用一個特殊格是把兩個相衝的部分框起來並告知，其實只要修改符合合併就能合併了。</p>
+<h4>步驟解說篇</h4>
+<p>在步驟前必須先完成以下步驟</p>
+<p>1.必須每個成員先將大組倉儲給<span style="background-color: #ff0000;">fork</span>，這樣就能獲得一個<span style="background-color: #00ffff;">自己帳號</span>的大組倉儲</p>
+<p>2.clone<span style="background-color: #00ffff;">自己帳號</span>的大組倉儲</p>
+<p>3.將倉儲內推送時的person key或者使用ssh的小夥伴必須將.git裡的內容修改成如同自己倉出一樣</p>
+<p>這樣就算完成了前置步驟了</p>
+<h5>再來以下正式進入步驟</h5>
+<p>1.更改完自己想要的內容後先用正常手續將內容推送至<span style="background-color: #00ffff;">自己帳號</span>下的大組倉儲</p>
+<p>2.在github上選擇Pull requests的按鍵</p>
+<p>3.將merge的消息傳回給組長的大組倉儲(綠綠的給他按下去就對了</p>
+<p>4.組長查驗確認沒問題即可merge</p>
+<p>以上即是正常流程下最順利的狀況，接下來會稍微說明版本同步問題以及merge的衝突問題以及如何解決</p>
+<h5>首先當近端及遠端的部分不同步</h5>
+<p>因當先將github上的版本給同步，在觀察commit那一欄要是組長倉儲有更新那裏就可以更新版本</p>
+<p>變成和組長一樣，再來在近端用git pull將資料從遠端給抓下來做合併，這樣就完成了最簡單的更新自己的倉儲了。</p>
+<p>那如果在github上無法合併可以怎麼做呢? 那說明一件事你在進行merge時跟別人衝突到或者格是有問題之類的，簡單來說就是有問題之後沒更改之後又繼續更新所導致的，那可以試試以下的方法</p>
+<p><img alt="" height="420" src="https://40923123.github.io/cd2022/images/hywuwlrcaQ.png" width="800"/></p>
+<p>前面有說道能使用git pull進行同步，但是如果自己帳號下github的資料就不對了就算git pull也沒辦法那就使用<span style="background-color: #00ff00;">git pull 組長大組倉儲網址.git main</span></p>
+<p>將正確內容最新版本同步下來後重新push一次到<span style="background-color: #00ffff;">自己帳號</span>下的大組倉儲，這樣就可以將遠端成功更新成正確的版本了</p>
+<h4>w10_block_ui</h4>
+<p>第一部加上一些註解的影片</p>
+<p></p>
+<script>
+var winkVideoData4 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 865, y: 477, width: 60, height: 24 }, target: 3 },
+    ],
+    "242": [
+      { type: "gotoframe", rect: { x: 507, y: 375, width: 60, height: 24 }, target: 243 },
+      { type: "gotoframe", rect: { x: 434, y: 373, width: 60, height: 24 }, target: 2 },
+    ],
+    "348": [
+      { type: "gotoframe", rect: { x: 325, y: 549, width: 60, height: 24 }, target: 349 },
+      { type: "gotoframe", rect: { x: 252, y: 550, width: 60, height: 24 }, target: 242 },
+    ],
+    "366": [
+      { type: "gotoframe", rect: { x: 337, y: 477, width: 60, height: 24 }, target: 367 },
+      { type: "gotoframe", rect: { x: 271, y: 475, width: 60, height: 24 }, target: 348 },
+    ],
+    "414": [
+      { type: "gotoframe", rect: { x: 408, y: 341, width: 60, height: 24 }, target: 415 },
+      { type: "gotoframe", rect: { x: 342, y: 341, width: 60, height: 24 }, target: 366 },
+    ],
+    "433": [
+      { type: "gotoframe", rect: { x: 600, y: 520, width: 60, height: 24 }, target: 434 },
+      { type: "gotoframe", rect: { x: 528, y: 520, width: 60, height: 24 }, target: 414 },
+    ],
+    "491": [
+      { type: "gotoframe", rect: { x: 424, y: 186, width: 60, height: 24 }, target: 492 },
+      { type: "gotoframe", rect: { x: 355, y: 186, width: 60, height: 24 }, target: 433 },
+    ],
+    "608": [
+      { type: "gotoframe", rect: { x: 503, y: 179, width: 60, height: 24 }, target: 609 },
+      { type: "gotoframe", rect: { x: 427, y: 180, width: 60, height: 24 }, target: 491 },
+    ],
+    "700": [
+      { type: "gotoframe", rect: { x: 451, y: 270, width: 60, height: 24 }, target: 701 },
+      { type: "gotoframe", rect: { x: 380, y: 271, width: 60, height: 24 }, target: 608 },
+    ],
+    "753": [
+      { type: "gotoframe", rect: { x: 344, y: 126, width: 60, height: 24 }, target: 754 },
+      { type: "gotoframe", rect: { x: 273, y: 124, width: 60, height: 24 }, target: 700 },
+    ],
+    "805": [
+      { type: "gotoframe", rect: { x: 925, y: 513, width: 60, height: 24 }, target: 806 },
+      { type: "gotoframe", rect: { x: 857, y: 513, width: 60, height: 24 }, target: 753 },
+    ],
+    "1190": [
+      { type: "gotoframe", rect: { x: 689, y: 301, width: 60, height: 24 }, target: 1191 },
+      { type: "gotoframe", rect: { x: 614, y: 300, width: 60, height: 24 }, target: 805 },
+    ],
+    "1234": [
+      { type: "gotoframe", rect: { x: 797, y: 210, width: 60, height: 24 }, target: 1235 },
+      { type: "gotoframe", rect: { x: 723, y: 211, width: 60, height: 24 }, target: 1190 },
+    ],
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="./../cmsimde/static" data-varname="winkVideoData4" height="630" width="1008">
+<source src="./../downloads/40923123/w10_block_ui.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<h4>midterm</h4>
+<p>這禮拜主要是先畫圖再進行組立然後放置coppeliasim進行模擬，再加上3軸UI介面進行控制</p>
+<p>在進行coppeliasim模擬有以下幾點要注意</p>
+<p>1軸在模擬時需增加轉速和扭力給他</p>
+<p>2中間相互連結且有移動的零件都必須把碰撞打開</p>
+<p>3UI介面的程式是加在最一開始的零件上的</p>
+<p>4若軸與兩組以上會動的零件相連需另用一個dummy去限制他</p>
+<h4>操作流程如下</h4>
+<p>1 先將組合圖匯入</p>
+<p>2 將組合圖零件炸開</p>
+<p>3 先定義基礎邊</p>
+<p>4 將軸開始從基礎邊一一接上去</p>
+<p>5 等都接完之後依上述說的將dummy加上去並進行限制，若遇到有街兩邊以上的軸藥劑的再多加dummy</p>
+<p>6 將碰撞和軸的速度及扭力都打開</p>
+<p>7執行</p>
+<p>模擬的組立影片在此 影片</p>
+<h4>結果</h4>
+<p></p>
+<p></p>
+<script>
+var winkVideoData5 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="./../cmsimde/static" data-varname="winkVideoData5" height="648" width="1152">
+<source src="./../downloads/40923123/2022041701.mp4" type="video/mp4"/></video>
+<div class="winkVideoOverlayClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
+<div class="winkVideoControlBarProgressLeftClass"></div>
+<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarProgressRightClass"></div>
+<div class="winkVideoControlBarProgressFilledMiddleClass"></div>
+<div class="winkVideoControlBarProgressThumbClass"></div>
+</div>
+<div class="winkVideoPlayOverlayClass"></div>
+</div>
+<p>心得: 目前學到比較多的都是關於協同之間會發生的問題或者是衝突的問題處理，再來還有關於未來如果將開發與協同綁在一起的話該如何運作的狀況，目前對於協同的概念已經有初步了解了，在遇到問題也開始知道該如何解決而不是什麼都不知道這樣。</p>
 <p>--------------------</p>
 <p>[51]</p>
 <p>--------------------</p>
